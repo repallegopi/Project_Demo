@@ -1,0 +1,144 @@
+
+Informatica PC Client Component  - 4 Tools
+
+1) Repository Manager - R
+2) Designer - D
+3) Workflow Manager - W
+4) Workflow Monitor  M
+
+
+
+1) Repository Manager - R  - Admin related task
+
+ * Folder creation/deletion
+ * Access /Priveledges
+ * Code Migration (xml import/export)
+ * Historical run status
+
+
+2) Designer - D - Developer
+
+ * Source Definition
+ * Target Definition
+ * Mapping (Business logic)
+
+3) Workflow Manager - W
+
+ * Session
+ * Connection
+ * Workflow 
+
+4) Workflow Monitor  M  - Monitoring
+
+ * Run status ( Running/succeeded/failed/aborted/stopped)
+ * Row count( Source/target)
+ * Throughput (record/sec)
+ * Session log -- Important
+
+
+------------------------------------------------------------------------------------------------------------------- 
+
+5 Component of Designer
+
+
+1) Source Analyzer - Source Definition
+
+   * Relational DB table
+   * Flat Files (txt/csv)
+   * Cobol
+   * Xml Files
+
+2) Target Designer -Target Definition
+
+   * Relational DB table
+   * Flat Files (txt/csv)
+   * Xml Files
+
+3) Transformation Developer
+
+    * Reusable Transformation
+    * Single Transformation
+    * Can be re-used in mutiple mapping
+
+4) Mapplet Designer 
+
+    * Reusable Transformation
+    * Set of Transformation - to create a reusable logic
+    * Can be re-used in mutiple mapping
+
+
+5) Mapping Designer - Business logic
+
+   * Mapping
+
+
+-------------------------------------------------------------------------------------------------
+
+
+3 Components of Workflow Manager
+
+
+1) Task Developer 
+
+ * Session (Reusable Session)
+ * Connections definition
+
+2) Worklet Designer
+
+  * Re-usable component
+  * Session level
+  * Set of sessions
+
+3) Workflow Designer
+
+  * Session (Non-Reusable Session)
+  * Workflow
+
+-----------------------------------------------------------------------------------------------------
+
+Steps to create a workflow
+
+
+1) Source Definition - Source Analyzer - Desinger D
+
+2) Target Definition - Target Designer - Desinger D
+
+3) Mapping - Mapping Designer -  Desinger D
+
+4) Workflow -- Workflow Designer - Workflow Manager W
+
+5) Session - Workflow Designer - Workflow Manager W
+
+6) Connections - Workflow Designer - Workflow Manager W
+
+7) Monitoring - Workflow Monitor - M
+
+
+---------------------------------------------------------------------------------------------------------------
+
+Naming conventions:
+
+mapping --> m_Table_name    e.g  m_Employees_Details
+
+session  --> s_mapping_name  e.g  s_m_Employees_Details
+
+workflow --> wkf (or) wf_session_name  e.g wf_Employees_Details
+
+mapplet --> mplt (or)  ml
+
+worklet --> wklt (or) wl
+
+Dimension table --> dim_  (or) d_
+
+Fact Table --> Fact_ (or) f_
+
+Views  -->  table_name_v
+
+Materialized views --> table_name_mv890-
+
+----------------------------------------------------------------------------------------------
+$PMRootDir = C:\Informatica\10.2.0\server\infa_shared
+
+$PMSourceFileDir\ = C:\Informatica\10.2.0\server\infa_shared\SrcFiles
+
+

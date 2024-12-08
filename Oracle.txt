@@ -1,0 +1,12 @@
+1.Introduction
+2.Constraints
+3.Types of select statements
+4.Sun Queries
+5.Joins
+4.Single Row Functions
+5.Set Opertors
+6.Analytical or windows Functions
+7.Aggregate Functions
+8.VIews
+11.case statement
+12.Merge 
